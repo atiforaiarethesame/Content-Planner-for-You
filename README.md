@@ -1,11 +1,31 @@
-<div align="center">
+# Content Planner
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Aplikasi mobile-first untuk membantu content creator mengatur jadwal publikasi konten media sosial secara mudah dan terencana.
 
-  <h1>Built with AI Studio</h2>
+## Fitur Utama
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Dashboard Kalender**: Kalender bulanan dan mingguan interaktif untuk memantau dan memilih tanggal publikasi.
+- **Tambah & Edit Konten**: Form lengkap untuk judul, deskripsi, pilihan platform (Instagram, TikTok, YouTube, X, LinkedIn, Facebook), tanggal, waktu publikasi (*prime time*), dan status konten.
+- **Daftar Konten Terjadwal**: Pencarian, pengurutan, filter platform, dan filter 4 status konten dengan warna berbeda (*Terjadwal*, *Sedang Diproses*, *Siap Publikasi*, dan *Sudah Dipublikasikan*).
+- **Analitik & Pengaturan**: Ringkasan kepadatan jadwal 7 hari, distribusi platform, preferensi zona waktu (`WIB`/`WITA`/`WIT`), serta ekspor data JSON.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Menjalankan Secara Lokal
 
-</div>
+```bash
+npm install
+npm run dev
+```
+
+## Sinkronisasi ke GitHub & Deploy ke Vercel
+
+1. Inisialisasi dan push repository ke GitHub:
+   ```bash
+   git init
+   git add .
+   git commit -m "feat: content planner app"
+   git branch -M main
+   git remote add origin https://github.com/USERNAME/content-planner.git
+   git push -u origin main
+   ```
+2. Buka [Vercel](https://vercel.com/), pilih **Add New Project**, lalu hubungkan repository GitHub tersebut.
+3. Vercel akan otomatis mendeteksi preset **Vite** (`npm run build` dengan output `dist/` sesuai `vercel.json`). Klik **Deploy**.
